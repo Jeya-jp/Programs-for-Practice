@@ -1,4 +1,0 @@
-D:\Jeya\Article Programs\Programs-for-Practice\Speed Test\Speed Test\bin\Debug\Speed Test.exe
-D:\Jeya\Article Programs\Programs-for-Practice\Speed Test\Speed Test\bin\Debug\Speed Test.pdb
-D:\Jeya\Article Programs\Programs-for-Practice\Speed Test\Speed Test\obj\x86\Debug\Speed Test.exe
-D:\Jeya\Article Programs\Programs-for-Practice\Speed Test\Speed Test\obj\x86\Debug\Speed Test.pdb
