@@ -3,15 +3,7 @@
 namespace Bonus_Score
 {
     class Bonus_Score
-    {
-        static void Main(string[] args)
-        {
-            Console.Write("Enter the score: ");
-            double score = double.Parse(Console.ReadLine());
-            bonus(score);
-            Console.ReadKey();
-        }
-
+    {      
         static void bonus(double score)
         {
             double bonus_per = 0, new_score = 0;
@@ -51,6 +43,14 @@ namespace Bonus_Score
                 Console.Write("\nBonus: " + bonus_per);
                 Console.Write("\nNew Score: " + new_score);
             }
+        }
+
+        static void Main(string[] args)
+        {
+            Console.Write("Enter the score: ");
+            double score = double.Parse(Console.ReadLine());
+            bonus(score);
+            Console.ReadKey();
         }
     }
 }
