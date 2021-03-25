@@ -5,38 +5,59 @@ namespace Time
     {
         static void time(string hour, string minuite)
         {
-            int[] arr = { int.Parse(hour), int.Parse(minuite) };
-            int hr = arr[0];
-            int min = arr[1];
-            if (hr > 0 && hr <= 12 && min > 0 && min <= 60)
+            string[] arr = {hour, minuite };
+            int hr = int.Parse(arr[0]);
+            int min = int.Parse(arr[1]);
+            if (hr >= 0 && hr <= 11 && min >= 0 && min <= 59)
             {
                 int add = min + 25;
-                if (add > 60)
+                if (add > 59)
                 {
-                    add = add - 60;
+                    add = add - 59;
                     hr++;
-                    Console.Write(hr + ": " + add);
+                    if (add <= 9)
+                    {
+                        Console.Write(hr + ":0" + add);
+                    }
+                    else
+                    {
+                        Console.Write(hr + ":" + add);
+                    }
                 }
                 else
                 {
-                    Console.Write(hr + ": " + add);
+                    Console.Write(hr + ":" + add);
                 }
             }
-            else if (hr > 0 && hr <= 24 && min > 0 && min <= 60)
+            else if (hr >= 0 && hr <= 23 && min >= 0 && min <= 59)
             {
                 int add = min + 25;
                 {
-                    if (add > 60 && hr == 24)
+                    if (add > 59 && hr == 23)
                     {
                         add = add - 60;
                         hr = 0;
-                        Console.Write(hr + ": " + add);
+                        if (add <= 9)
+                        {
+                            Console.Write(hr + ":0" + add);
+                        }
+                        else
+                        {
+                            Console.Write(hr + ":" + add);
+                        }
                     }
-                    else if (add > 60)
+                    else if (add > 59)
                     {
-                        add = add - 60;
+                        add = add - 59;
                         hr++;
-                        Console.Write(hr + ": " + add);
+                        if (add <= 9)
+                        {
+                            Console.Write(hr + ":0" + add);
+                        }
+                        else
+                        {
+                            Console.Write(hr + ":" + add);
+                        }
                     }
                     else
                     {
