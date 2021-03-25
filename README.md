@@ -1,6 +1,6 @@
 # Programs-for-Practice
 - [x] Task #1 - Speed Test
-    You need to write a function that receives an argument. This argument is going to be our speed. If our speed meets a certain condition, it should return a certain string.
+    - [] You need to write a function that receives an argument. This argument is going to be our speed. If our speed meets a certain condition, it should return a certain string.
 
     - If our speed is under 10 or equal - return slow
     - If our speed is over 10 and up to 40 - return average
